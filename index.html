@@ -93,12 +93,37 @@
     <header>
         <h1>Slopify</h1>
         <p><em>"The <a href="https://www.newmanmentalism.com/blog/a-mentalist-explains-how-ouija-boards-work-and-the-ideomotor-effect" target="_blank">ideomotor effect</a> of software"</em></p>
-        <image id="frog" src="static/images/frog.webp"></image>
-        <br >        <!-- hitwebcounter Code START -->
-<!-- hitwebcounter Code START -->
-<a href="https://www.hitwebcounter.com" target="_blank">
-    <img src="https://hitwebcounter.com/counter/counter.php?page=18132009&style=0010&nbdigits=9&type=page&initCount=0" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a>    </header>
-    <main>
+        <image id="frog" src="static/images/frog.webp" style="width: 400px; height: 400px;"></image>
+        <br > 
+        <h2>Welcome visitor number:</h2>
+        <div id="hitwebcounter">
+            <img src="/static/images/counter/row-1-column-1.png" alt="0" class="hidden">
+            <img src="/static/images/counter/row-1-column-2.png" alt="1" class="hidden">
+            <img src="/static/images/counter/row-1-column-3.png" alt="2" class="hidden">
+            <img src="/static/images/counter/row-1-column-4.png" alt="3" class="hidden">
+            <img src="/static/images/counter/row-1-column-5.png" alt="4" class="hidden">
+            <img src="/static/images/counter/row-1-column-6.png" alt="5" class="hidden">
+            <img src="/static/images/counter/row-1-column-7.png" alt="6" class="hidden">
+            <img src="/static/images/counter/row-1-column-8.png" alt="7" class="hidden">
+            <img src="/static/images/counter/row-1-column-9.png" alt="8" class="hidden">
+        </div>
+        <style>
+            h2 {
+                margin-bottom: 0;
+            }
+            #hitwebcounter {
+                min-height: 57px;
+            }
+            .hidden {
+                opacity: 0;
+            }
+            #hitwebcounter img {
+                margin: 0;
+                width: 32px;
+                height: 55px;
+            }
+        </style>
+        <main>
         <section>
             <h2>About Slopify</h2>
             <p>Slopify is a 100% community-built open-source website and product. Its unique premise invites contributors to:</p>
@@ -304,6 +329,7 @@
             });
         });
     </script>
+    <script src="counter.js"></script>
 
     <script type="text/javascript">
         var stock_url = "https://raw.githubusercontent.com/rreichel3/US-Stock-Symbols/main/all/all_tickers.txt";
